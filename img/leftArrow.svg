@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="no"?>
+
+<svg width="130px" height="60px" version="1.1" xmlns="http://www.w3.org/2000/svg">
+	<defs>
+	    <filter id="dropshadow" height="130%">
+	      <feGaussianBlur in="SourceAlpha" stdDeviation="1"/> 
+	      <feOffset dx="1" dy="1" result="offsetblur"/> 
+	      <feMerge> 
+	        <feMergeNode/>
+	        <feMergeNode in="SourceGraphic"/> 
+	      </feMerge>
+	    </filter>
+	  </defs>
+	<g transform="scale(0.3)">
+	<polygon points="10 30, 
+					100 30
+					100 20
+					120 35
+					100 50
+					100 40
+					10 40" fill="orange" filter="url(#dropshadow)"/>
+	</g>
+</svg>
